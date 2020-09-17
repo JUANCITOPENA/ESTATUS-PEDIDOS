@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Reporte BI</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript">
+        function validar() {
+            var usuario = document.getElementById("usuario").value;
+            var Contraseña = document.getElementById("pass").value;
+
+            if (usuario == "JUANCITO" && Contraseña == "JPV123") {
+                alert("Usuario y Contraseña validos");
+
+                window.open("https://app.powerbi.com/view?r=eyJrIjoiMDdjZGRkNmUtNjJjZS00MmU5LWI3M2YtYTY5YzFkMmU4NTczIiwidCI6IjZkZjY3NDI4LTMwYzYtNDk3Ny1iMTIxLWY1OWZlM2FjZjdhMCIsImMiOjJ9")
+            } else {
+                alert("Verifique sus credenciales");
+            }
+        }
+
+
+        function click() {
+            if (event.button == 2) {
+                alert('Boton derecho deshabilitado');
+            }
+        }
+        document.onmousedown = click
+            //-->
+    </script>
+</head>
+
+<body>
+    <!-- Oncontextmenu="return false" onkeydown="return false"> -->
+
+    <center>
+        <div class="area">
+            <div id="logowrap">
+                <img class="foto" src="imagenes/logo.png" alt="Logo de Juancito" />
+            </div>
+            <br>
+
+            <h2 class="text-center"><strong>Entrar para Ver sus Pedidos</strong></h2>
+            <table>
+                <tr>
+                    <td><label>Usuario: </label></td>
+                    <td><input type="text" name="usuario" id="usuario"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><label>Contraseña: </label></td>
+
+                    <td><input type="password" name="pass" id="pass"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" class="button" name="btnVerifivaca" id="btnVerifica" onclick="validar()" value="verificar" style="width: 100%"> </td>
+                </tr>
+
+            </table>
+
+        </div>
+    </center>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
